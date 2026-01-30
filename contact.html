@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - АПТ</title>
+    <link rel="stylesheet" href="site.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 25px;  
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .employee {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            transition: transform 0.3s ease;
+        }
+
+        .employee:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .employee img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #f0f0f0;
+        }
+
+        .employee h3 {
+            margin: 10px 0 5px 0;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+
+        .employee .position {
+            font-style: italic;
+            color: #3498db;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .employee .description {
+            color: #555;
+            text-align: center;
+            font-size: 0.9em;
+            line-height: 1.5;
+            padding: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                gap: 15px;
+            }
+            
+            .employee {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .employee img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .employee {
+                max-width: 100%;
+            }
+            
+            .employee img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ангарский Политехнический Техникум</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О техникуме</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="students.html">Студенты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teachers.html">Преподаватели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Вход</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center mt-4">
+        <h1 class="display-4">Наши сотрудники</h1>
+    </div>
+
+    <div class="container mt-4">
+        <div class="employee">
+            <img src="images/1.jpg" alt="Бархатова Мария Александровна">
+            <h3>Бархатова Мария Александровна</h3>
+            <p class="position">Преподаватель, первая квалификационная категория</p>
+            <p class="description">Преподаватель русского языка и литературы. Стаж работы: 15 лет. Автор методических пособий для студентов.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/2.jpg" alt="Смирнова Елена Викторовна">
+            <h3>Смирнова Елена Викторовна</h3>
+            <p class="position">Старший преподаватель информатики</p>
+            <p class="description">Преподаватель информационных систем и программирования. Эксперт в области веб-разработки.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/3.jpg" alt="Иванов Алексей Петрович">
+            <h3>Иванов Алексей Петрович</h3>
+            <p class="position">Заведующий отделением</p>
+            <p class="description">Кандидат технических наук. Руководитель отделения технических специальностей.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/4.jpg" alt="Кузнецова Светлана Анатольевна">
+            <h3>Кузнецова Светлана Анатольевна</h3>
+            <p class="position">Преподаватель химических технологий</p>
+            <p class="description">Преподаватель химической технологии производства. Высшая квалификационная категория.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/5.jpg" alt="Сидоров Дмитрий Николаевич">
+            <h3>Сидоров Дмитрий Николаевич</h3>
+            <p class="position">Преподаватель электротехники</p>
+            <p class="description">Преподаватель технической эксплуатации электрического оборудования. Инженер-практик.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/6.jpg" alt="Васильева Ольга Сергеевна">
+            <h3>Васильева Ольга Сергеевна</h3>
+            <p class="position">Методист, преподаватель экономики</p>
+            <p class="description">Преподаватель экономических дисциплин. Разработчик учебных программ и методических материалов.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/7.jpg" alt="Петров Игорь Владимирович">
+            <h3>Петров Игорь Владимирович</h3>
+            <p class="position">Преподаватель нефтегазового дела</p>
+            <p class="description">Специалист в области сооружения и эксплуатации газонефтепроводов. Производственный стаж: 20 лет.</p>
+        </div>
+        
+        <div class="employee">
+            <img src="images/8.jpg" alt="Николаева Анна Дмитриевна">
+            <h3>Николаева Анна Дмитриевна</h3>
+            <p class="position">Преподаватель промышленного оборудования</p>
+            <p class="description">Преподаватель монтажа и технического обслуживания промышленного оборудования. Инженер-механик.</p>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span>© 2024 Ангарский политехнический техникум</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
